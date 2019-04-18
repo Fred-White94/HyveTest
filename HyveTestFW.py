@@ -13,13 +13,13 @@ class binarydata:
             data = bf.read().hex()
             print("here")
             a = bytearray.fromhex(data)
-            c = np.asarray(a) 
+            c = np.asarray(a) + n
             self.OUTPUT = bytearray(c)
             #File = open("OUTPUTTED.bin", "wb")
             #File.write(self.OUTPUT)
 
 a = binarydata(sys.argv[1])
-a.Compute_Output(1)
+a.Compute_Output(0)
 
 
 
